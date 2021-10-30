@@ -9,7 +9,7 @@ import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 public class MyImage extends JPanel{
-	private String fileName;
+	public String fileName;
 	private BufferedImage image;
 	
 	public MyImage(String name) {
@@ -27,7 +27,7 @@ public class MyImage extends JPanel{
 		Dimension dimension = new Dimension(image.getWidth(), image.getHeight());
 		setPreferredSize(dimension);
 	}
-	
+
  	@Override
  	public void paintComponent(Graphics g) {
  		Graphics2D g2d = (Graphics2D) g;
